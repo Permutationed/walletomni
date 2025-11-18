@@ -29,16 +29,16 @@ function Features() {
   ]
 
   return (
-    <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Everything You Need to
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               {' '}Maximize Rewards
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Powerful features designed to help you earn more from every purchase
           </p>
         </div>
@@ -46,15 +46,15 @@ function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              className="bg-gray-800 rounded-2xl p-8 border border-gray-700 shadow-sm hover:shadow-xl hover:border-purple-500 transition-all duration-300 hover:-translate-y-1"
             >
               <div className={`w-16 h-16 bg-gradient-to-br ${feature.gradient} rounded-xl flex items-center justify-center mb-6`}>
                 <i className={`fas ${feature.icon} text-white text-2xl`}></i>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 {feature.description}
               </p>
             </div>

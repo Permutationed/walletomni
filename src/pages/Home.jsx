@@ -9,14 +9,18 @@ import Footer from '../components/Footer'
 
 function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <Hero />
-      <Features />
-      <Benefits />
-      <Testimonials />
-      <CTA />
-      <Footer />
+    <div className="flex min-h-svh flex-col bg-gray-900">
+      <div className="grow">
+        <main className="relative overflow-hidden md:overflow-visible">
+          <Navbar />
+          <Hero />
+          <Features />
+          <Benefits />
+          <Testimonials />
+          <CTA />
+          <Footer />
+        </main>
+      </div>
     </div>
   )
 }
