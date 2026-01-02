@@ -18,6 +18,13 @@ function Footer() {
         >
           Privacy
         </Link>
+        <span className="text-white/30 hidden sm:inline">•</span>
+        <Link
+          to="/tos"
+          className="text-white/70 hover:text-white transition-colors text-sm md:text-base"
+        >
+          Terms of Service
+        </Link>
       </div>
     </footer>
   )
