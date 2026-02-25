@@ -4,6 +4,9 @@
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "rewrites": [
-    { "source": "/((?!assets/).*)", "destination": "/index.html" }
+    {
+      "source": "/((?!assets/)(?!.*\\.(jpg|jpeg|png|gif|ico|svg|css|js|woff2?|ttf|eot|json|webp)$).*)",
+      "destination": "/index.html"
+    }
   ]
 }
